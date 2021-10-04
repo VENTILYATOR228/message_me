@@ -3,7 +3,7 @@ class ChatroomController < ApplicationController
 
   def index
     @massage = Message.new
-    @messages = Message.all
+    @messages = Message.custom_display
   end
 
 end
